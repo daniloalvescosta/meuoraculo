@@ -1,0 +1,11 @@
+<div class="oracle-container" data-controller="cards">
+  <h1>Oráculo Eterno</h1>
+  
+  <button data-action="click->cards#shuffle" class="shuffle-btn">Embaralhar</button>
+
+  <div class="cards-grid">
+    <% (1..25).each do |i| %>
+      <div class="card" data-cards-target="card"></div>
+    <% end %>
+  </div>
+</div>
